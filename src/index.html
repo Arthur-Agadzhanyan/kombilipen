@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <title>Комбилипен</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    @@include('_navigation.html')
+
+    <section class="intro">
+        <div class="container">
+            <div class="intro__content">
+                <div class="content__info">
+                    <div class="info__name">
+                        <h1 class="name__title section__title">Комбилипен<span>®</span></h1>
+                        <h3 class="name__subtitle section__subtitle">Нейро табс</h3>
+                    </div>
+
+                    <div class="info__slogan">— это для нервов!</div>
+
+                    <div class="info__tabs">
+                        <input type="radio" id="radio_btn_1" class="tabs__radio" name="delivery" placeholder=" " required checked>
+
+                        <label class="tabs_item" for="radio_btn_1">
+                            <span class="item__text">30 таблеток</span>
+                        </label>
+
+                        <input type="radio" id="radio_btn_2" class="tabs__radio" name="delivery" placeholder=" " required>
+
+                        <label class="tabs_item" for="radio_btn_2">
+                            <span class="item__text">60 таблеток</span>
+                        </label>
+                    </div>
+
+                    <div class="info__links">
+                        <a class="links__item" href="#">Узнать цену</a>
+                        <a class="links__item"href="#">Инструкция</a>
+                    </div>
+                </div>
+                <div class="content__img">
+                    <img src="img/intro/box.png" alt="">
+
+                    <div class="intro_vitamins">
+                        <img src="img/intro/vitamins.svg" alt="">
+                    </div>
+                </div>
+                
+            </div>
+            <button class="content__btn">Купить</button>
+        </div>
+        <div class="bg_img">
+            <img src="img/intro/bg_img.svg" alt="">
+        </div>
+    </section>
+
+    <section class="deficit">
+        <div class="container">
+            <div class="deficit__content">
+                <div class="deficit__info">
+                    <h2 class="info__title">Дефицит витаминов B1 и B6</h2>
+                    <p class="info__text">вызывает поражение нервных волокон, симптомы которого могут проявляться по-разному:</p>
+                </div>
+    
+                <div class="deficit__list">
+                    <div class="list__item">
+                        <div class="item__image">
+                            <img src="img/deficit/1.png" alt="">
+                            <div class="image_back"></div>
+                        </div>
+                        <p class="item__text">Скованность в шее</p>
+                    </div>
+
+                    <div class="list__item">
+                        <div class="item__image">
+                            <img src="img/deficit/1.png" alt="">
+                            <div class="image_back"></div>
+                        </div>
+                        <p class="item__text">Онемение, покалывание</p>
+                    </div>
+
+                    <div class="list__item">
+                        <div class="item__image">
+                            <img src="img/deficit/1.png" alt="">
+                            <div class="image_back"></div>
+                        </div>
+                        <p class="item__text">Жжение</p>
+                    </div>
+
+                    <div class="list__item">
+                        <div class="item__image">
+                            <img src="img/deficit/1.png" alt="">
+                            <div class="image_back"></div>
+                        </div>
+                        <p class="item__text">Болевые ощущения</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits">
+        <div class="container">
+            <div class="benefits__content">
+                <div class="content__header">
+                    <h1 class="section__title">Комбилипен<span>®</span></h1>
+                    <h3 class="section__subtitle">Нейро табс</h3>
+                </div>
+
+                <div class="content__text">
+                    Содержит витамины В1 и В6 в лечебных дозах:
+                </div>
+
+                <div class="content__list">
+                    <div class="list__item">
+                        <div class="item__image">
+                            <img src="img/benefits/1.svg" alt="">
+                        </div>
+                        Восполняет <div class="item__text">дефицит витаминов В1, В6</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    @@include('_footer.html')
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

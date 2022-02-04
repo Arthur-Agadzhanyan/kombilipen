@@ -1,0 +1,52 @@
+.navigation {
+    padding: 24px 0px;
+    position: sticky;
+    top:0;
+    z-index: 100000;
+    background: #fff;
+
+    .navigation__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navigation__links {
+        display: flex;
+        align-items: center;
+
+        .links__brand {
+            margin-right: 36px;
+        }
+
+        .links__list {
+
+            .list__item {
+                margin-right: 24px;
+                @include text($grey_1,14px,bold);
+            }
+        }
+    }
+    
+    .navigation__buy {
+        display: flex;
+        align-items: center;
+        .buy__btn {
+            padding: 14px 47px;
+            @include text(#fff,16px,500);
+            background: $crimson_2;
+            border: 1px solid $crimson_2;
+            transition: all .2s linear;
+            cursor: pointer;
+
+            &:hover{
+                background: #fff;
+                color: $crimson_2;
+            }
+        }
+
+        .buy__img {
+            margin-left: 48px;
+        }
+    }
+}

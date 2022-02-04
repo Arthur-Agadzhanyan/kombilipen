@@ -1,0 +1,245 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+    @font-face {
+        font-family: $font_name;
+        font-display: swap;
+        src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+        font-weight: #{$weight};
+        font-style: #{$style};
+    }
+}
+
+@import "./fonts.scss";
+@import './normalize.scss';
+@import './variables.scss';
+@import "./mixins.scss";
+@import "./animations.scss";
+
+@import "./_navigation.scss";
+@import "./_footer.scss";
+
+@import "./modals.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 100%;
+    padding: 0px 64px;
+}
+
+.section__title{
+    @include text(#fff,62px,bold);
+    display: flex;
+    align-items: flex-start;
+
+    span{
+        display: inline;
+        @include text(#fff,23px,normal);
+    }
+}
+
+.section__subtitle {
+    text-transform: uppercase;
+    @include text(#fff,24px,normal,29px);
+    margin-bottom: 20px;
+}
+
+.intro{
+    position: relative;
+    padding-top: 178px;
+    background: linear-gradient(to right, $aqua_1 50%, white 50%);
+    width: 100%;
+    min-height: calc(100vh - 104px);
+    
+
+
+    .intro__content{
+        display: flex;
+        align-items: center;
+        .content__info {
+            position: relative;
+            z-index: 2;
+            .info__name {}
+
+            .info__slogan {
+                @include text(#fff,36px,bold);
+                margin-bottom: 86px;
+            }
+
+            .info__tabs {
+                display: flex;
+                margin-bottom: 48px;
+
+                .tabs__radio {
+                    display: none;
+                }
+
+                .tabs__radio:checked + .tabs_item{
+                    border: 1px solid #fff;
+                }
+
+                .tabs_item {
+                    transition: all .2s linear;
+                    display: block;
+                    border: 1px solid rgba(#fff, .5);
+                    padding: 29px 48px;
+                    margin-right: 24px;
+                    cursor: pointer;
+
+                    .item__text {
+                        @include text(#fff,18px,500);
+                    }
+                }
+            }
+            
+            .info__links {
+                
+                .links__item{
+                    text-decoration: none;
+                    @include text(#fff,16px,normal);
+                    margin-right: 40px;
+                }
+            }
+        }
+        
+        .content__img {
+            margin-left: 143px;
+            position: relative;
+            z-index: 2;
+            
+            .intro_vitamins{
+                position: absolute;
+                top: -27px;
+                right: -20px;
+                transform: translateX(80%);
+            }
+        }
+    }
+
+    .content__btn {
+        display: block;
+        margin-left: auto;
+        @include text(#fff,22px,bold);
+        padding: 21px 85px;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        z-index: 2;
+
+        background: linear-gradient(180deg, #FF0082 30%, rgb(46, 0, 23) 200%);
+        // box-shadow: 0px 64.3333px 128.667px , inset 0px -21.4444px 21.4444px #B8005D, inset 0px 21.4444px 21.4444px #FF0087;
+    }
+
+    .bg_img{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: 1;
+        
+        img{
+            min-height: 100vh;
+        }
+    }
+}
+
+.deficit{
+    border-top: 12px solid $light_grey;
+    padding-top: 72px;
+    padding-bottom: 80px;
+
+    .deficit__content{}
+
+    .deficit__info {
+        max-width: 665px;
+        margin-bottom: 65px;
+
+        .info__title {
+            @include text($crimson_1,62px,800,66px);
+        }
+
+        .info__text{
+            margin-top: 26px;
+            @include text($grey_2,24px,500,140%);
+        }
+    }
+    .deficit__list {
+        display: flex;
+        justify-content: space-between;
+        .list__item {
+            flex: 0 1 22%;
+
+            .item__image{
+                position: relative;
+                display: block;
+                margin-bottom: 17px;
+
+                img{
+                    width: 100%;
+                    position: relative;
+                    z-index: 2;
+                }
+
+                .image_back{
+                    position: absolute;
+                    top: -6px;
+                    right: -6px;
+                    width: 100%;
+                    height: 98%;
+                    
+                    z-index: 1;
+                    background: $light_grey;
+                }
+            }
+
+            .item__text {
+                @include text($crimson_1,34px,bold,34px);
+                max-width: 60%;
+            }
+        }
+        
+    }
+    
+}
+ 
+
+.benefits {
+    padding-top: 104px;
+    min-height: 90vh;
+    background: $aqua_2;
+
+    .benefits__content {
+
+        .content__header {
+            margin-bottom: 40px;
+        }
+        
+        .content__text {
+            @include text(#fff,32px,300,140%);
+            margin-bottom: 83px;
+        }
+
+        .content__list {
+        }
+    }
+}
