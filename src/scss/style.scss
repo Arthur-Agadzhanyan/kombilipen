@@ -224,22 +224,116 @@ a{
  
 
 .benefits {
+    position: relative;
     padding-top: 104px;
     min-height: 90vh;
     background: $aqua_2;
 
     .benefits__content {
-
+        position: relative;
+        z-index: 2;
         .content__header {
             margin-bottom: 40px;
         }
         
         .content__text {
             @include text(#fff,32px,300,140%);
-            margin-bottom: 83px;
+            margin-bottom: 90px;
         }
 
         .content__list {
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 68px;
+
+            .list__item {
+                flex: 0 1 17%;
+                display: flex;
+                flex-direction: column;
+                // align-items: center;
+                text-align: left;
+
+                .item__image {
+                    position: relative;
+                    text-align: left;
+                    margin-bottom: 16px;
+
+                    img{
+                        width: 156px;
+                        height: 156px;
+                        position: relative;
+                        z-index: 2;
+                    }
+
+                    .image_back{
+                        position: absolute;
+                        top: -7px;
+                        left: 10px;
+                        z-index: 1;
+
+                        background: $crimson_2;
+                        border-radius: 50%;
+                        width: 156px;
+                        height: 156px;
+
+                    }
+                }
+                
+                .item__info{
+                    .info__title {
+                        @include text(#fff,32px,600,140%);
+                    }
+
+                    .info__text {
+                        @include text(#fff,18px,400,140%);
+                    }
+                }
+            }
+            
+        }
+        
+    }
+
+    .benefits__bg_first{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+}
+
+.where_to_buy {
+    background: #F7F7F7;
+    padding-top: 52px;
+    padding-bottom: 71px;
+    .where_to_buy__content {
+
+        .content__title {
+            margin-bottom: 45px;
+            @include text($aqua_1,32px,800);
+        }
+
+        .content__list {
+            display: flex;
+            justify-content: space-between;
+
+            .list__item {
+                flex: 0 1 24%;
+                background: #fff;
+                
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-top: 68px;
+                padding-bottom: 68px;
+
+                .item__img {
+                   img{
+                    max-width: 100%;
+                   }
+                }
+            }
         }
     }
 }
+
