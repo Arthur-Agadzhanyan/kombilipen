@@ -810,6 +810,148 @@ a {
   z-index: 1;
 }
 
+.how_to_apply {
+  position: relative;
+  padding-top: 89px;
+  padding-bottom: 97px;
+  min-height: 70vh;
+}
+
+.how_to_apply .section__title {
+  max-width: 770px;
+  line-height: 66px;
+  font-weight: 800;
+  color: #019D99;
+}
+
+.how_to_apply .how_to_apply__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 116px;
+}
+
+.how_to_apply .how_to_apply__content .content__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 67px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33%;
+          flex: 0 1 33%;
+}
+
+.how_to_apply .how_to_apply__content .content__list .list__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 48%;
+          flex: 0 1 48%;
+  margin-bottom: 63px;
+}
+
+.how_to_apply .how_to_apply__content .content__list .list__item .item__image {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 24px;
+}
+
+.how_to_apply .how_to_apply__content .content__list .list__item .item__image .image__wrapper {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  padding-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #00AFAA;
+  z-index: 2;
+}
+
+.how_to_apply .how_to_apply__content .content__list .list__item .item__image .image__back {
+  position: absolute;
+  top: -7px;
+  right: -11px;
+  z-index: -1;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #C8EBE8;
+}
+
+.how_to_apply .how_to_apply__content .content__list .list__item .item__text {
+  color: #006969;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.how_to_apply .how_to_apply__content .content__img {
+  position: relative;
+  z-index: 2;
+}
+
+.how_to_apply .how_to_apply__content .content__img img {
+  max-width: 100%;
+}
+
+.how_to_apply .how_to_apply__content .content__img .how_to_apply_vitamins {
+  max-width: 50%;
+  position: absolute;
+  top: 55px;
+  right: 0;
+  -webkit-transform: translateX(42%);
+      -ms-transform: translateX(42%);
+          transform: translateX(42%);
+}
+
+.how_to_apply .how_to_apply__content .content__btn {
+  display: block;
+  margin-left: auto;
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: normal;
+  padding: 21px 70px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #FF0082), color-stop(200%, #2e0017));
+  background: -o-linear-gradient(top, #FF0082 30%, #2e0017 200%);
+  background: linear-gradient(180deg, #FF0082 30%, #2e0017 200%);
+  margin-top: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.how_to_apply .bg__image {
+  position: absolute;
+  top: 12px;
+  right: 0px;
+  z-index: 1;
+}
+
+.how_to_apply .bg__image img {
+  min-height: 90vh;
+}
+
 .where_to_buy {
   background: #F7F7F7;
   padding-top: 52px;

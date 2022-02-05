@@ -302,6 +302,126 @@ a{
     }
 }
 
+.how_to_apply{
+    position: relative;
+    padding-top: 89px;
+    padding-bottom: 97px;
+    min-height: 70vh;
+
+    .section__title{
+        max-width: 770px;
+        line-height: 66px;
+        font-weight: 800;
+        color: $aqua_1;
+    }
+
+    .how_to_apply__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 116px;
+
+        .content__list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-right: 67px;
+
+            flex: 0 1 33%;
+
+            .list__item {
+                flex: 0 1 48%;
+                margin-bottom: 63px;
+
+                .item__image {
+                    position: relative;
+                    width: 120px;
+                    height: 120px;
+                    margin-bottom: 24px;
+
+                    .image__wrapper{
+                        width: 100%;
+                        height: 100%;
+
+                        border-radius: 50%;
+                        padding-top: 5px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        background: $aqua_2;
+                        z-index: 2;
+                    }
+
+                    .image__back{
+                        position: absolute;
+                        top: -7px;
+                        right: -11px;
+                        z-index: -1;
+                        width: 120px;
+                        height: 120px;
+                        border-radius: 50%;
+
+                        background: #C8EBE8;
+                    }
+                }
+                .item__text {
+                    @include text($green,18px,600,120%);
+                }
+            }
+        }
+        
+        .content__img {
+            position: relative;
+            z-index: 2;
+            
+            img{
+                max-width: 100%;
+            }
+
+            .how_to_apply_vitamins {
+                max-width: 50%;
+                position: absolute;
+                top: 55px;
+                right: 0;
+
+                transform: translateX(42%);
+                
+            }
+
+        }
+
+        .content__btn {
+            display: block;
+            margin-left: auto;
+            @include text(#fff,22px,bold);
+            padding: 21px 70px;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            z-index: 2;
+
+            background: linear-gradient(180deg, #FF0082 30%, rgb(46, 0, 23) 200%);
+
+            margin-top: auto;
+            
+            position: relative;
+            z-index: 2;
+        }
+    }
+
+    .bg__image{
+        position: absolute;
+        top: 12px;
+        right: 0px;
+        z-index: 1;
+        
+        img{
+            min-height: 90vh;
+        }
+    }
+}
+
 .where_to_buy {
     background: #F7F7F7;
     padding-top: 52px;
