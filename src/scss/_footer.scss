@@ -35,6 +35,11 @@
                 .contacts__block{
                     text-align: right;
                     margin-left: 37px;     
+
+                    @media screen and (max-width: 1500px) {
+                        margin-left: auto;
+                        max-width: 40%;
+                    }
                 }
             }
             .block-gps {
@@ -42,6 +47,14 @@
                     color: #656565
                 }
             }
+        }
+    }
+
+    .block__br{
+        display: none;
+
+        @media screen and (max-width: 1550px) {
+            display: block;
         }
     }
 }
