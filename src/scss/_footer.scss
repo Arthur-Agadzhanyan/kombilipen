@@ -1,0 +1,61 @@
+.footer {
+    .footer__top {
+        padding-top: 47px;
+        padding-bottom: 27px;
+
+        .top__content {
+            display: flex;
+            justify-content: space-between;
+
+            .block__text {
+                @include text(rgba(#656565, .7),14px);
+                margin-bottom: 5px;
+            }
+
+            .top__info {
+                display: flex;
+
+                .info__brand{
+                    margin-right: 3px;
+                }
+
+                .info__block {
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 28px;
+
+                    a,p{
+                        margin-right: auto;
+                    }
+                }
+            }
+
+            .top__contacts {
+                display: flex;
+                .contacts__block{
+                    text-align: right;
+                    margin-left: 37px;     
+                }
+            }
+            .block-gps {
+                p{
+                    color: #656565
+                }
+            }
+        }
+    }
+}
+
+
+.footer__bottom {
+    background: #F6F6F6;
+    padding-top: 32px;
+    padding-bottom: 27px;
+    text-align: center;
+
+    .bottom__text{
+        text-transform: uppercase;
+        @include text(#BDBDBD,24px,bold);
+    }
+
+}

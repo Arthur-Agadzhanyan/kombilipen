@@ -463,6 +463,84 @@ template {
   margin-left: 48px;
 }
 
+.footer .footer__top {
+  padding-top: 47px;
+  padding-bottom: 27px;
+}
+
+.footer .footer__top .top__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .footer__top .top__content .block__text {
+  color: rgba(101, 101, 101, 0.7);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+
+.footer .footer__top .top__content .top__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .footer__top .top__content .top__info .info__brand {
+  margin-right: 3px;
+}
+
+.footer .footer__top .top__content .top__info .info__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 28px;
+}
+
+.footer .footer__top .top__content .top__info .info__block a,
+.footer .footer__top .top__content .top__info .info__block p {
+  margin-right: auto;
+}
+
+.footer .footer__top .top__content .top__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .footer__top .top__content .top__contacts .contacts__block {
+  text-align: right;
+  margin-left: 37px;
+}
+
+.footer .footer__top .top__content .block-gps p {
+  color: #656565;
+}
+
+.footer__bottom {
+  background: #F6F6F6;
+  padding-top: 32px;
+  padding-bottom: 27px;
+  text-align: center;
+}
+
+.footer__bottom .bottom__text {
+  text-transform: uppercase;
+  color: #BDBDBD;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
