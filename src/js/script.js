@@ -3,6 +3,7 @@
 
 const navbarBtn = document.getElementById("navbar__btn")
 const mobileBar = document.querySelector(".mobile_bar")
+const listLinks = document.querySelectorAll('.list__link')
 
 navbarBtn.addEventListener('click',(e)=>{
 
@@ -17,4 +18,14 @@ navbarBtn.addEventListener('click',(e)=>{
             mobileBar.classList.add("bot_0")
         },500)
     } 
+})
+
+listLinks.forEach((link)=>{
+
+    link.addEventListener('click',(e)=>{
+        mobileBar.classList.add("mb_bar_closed")
+        mobileBar.classList.remove("bot_0")
+        navbarBtn.classList.remove('burger_active')
+    })
+
 })
