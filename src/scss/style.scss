@@ -407,8 +407,8 @@ a{
             display: none;
             max-width: 100vw;
             width: 100%;
+            top: -30px;
             img{
-                
                 width: 100%;
             }
         }
@@ -429,6 +429,8 @@ a{
 }
 
 .deficit{
+    position: relative;
+
     border-top: 12px solid $light_grey;
     padding-top: 72px;
     padding-bottom: 80px;
@@ -583,6 +585,31 @@ a{
         //     // justify-content: initial;
         // }
     }
+
+    .mb_bg{
+        display: none;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+
+        img{
+            min-height: 70vh;
+            height: 100%;
+        }
+
+        @media screen and (max-width: 1100px) {
+            display: block;
+        }
+
+        @media screen and (max-width: 400px) {
+            img{
+                min-height: initial;
+            }
+        }
+    }
+
     @media screen and (max-width: 1100px) {
         padding-top: 50px;
         padding-bottom: 70px;
@@ -599,6 +626,7 @@ a{
  
 .benefits {
     position: relative;
+    z-index: 1;
     padding-top: 104px;
     min-height: 90vh;
     background: $aqua_2;
@@ -782,6 +810,10 @@ a{
                 flex-direction: column;
                 padding-bottom: 40px;
             }
+
+            @media screen and (max-width: 500px) {
+                padding-bottom: 0px;
+            }
         }
         
     }
@@ -797,6 +829,17 @@ a{
         padding-top: 70px;
     }
 
+    @media screen and (max-width: 500px) {
+        overflow-x: hidden;
+        padding-top: 32px;
+
+        .benefits__bg_first{
+            transform: rotate(30deg) scale(.8);
+            max-width: 100vw;
+            top: -30px;
+            right: -30%;
+        }
+    }
 }
 
 .how_to_apply{
@@ -1115,13 +1158,57 @@ a{
         }
     }
 
+
     @media screen and (max-width: 700px) {
         padding-top: 32px;
         padding-bottom: 32px;
     }
+
+    @media screen and (max-width: 600px) {
+        overflow: hidden;
+
+        .bg__image{
+            position: absolute;
+            top: initial;
+            bottom: -60px;
+            
+            left: 120px;
+            z-index: 1;
+
+            transform: rotate(45deg) translateY(20%) ;
+            
+            img{
+                max-width: 100vw;
+                max-height: 115vw;
+            }
+        }  
+    }
+
+    @media screen and (max-width: 400px) {
+        overflow: hidden;
+
+        .bg__image{
+            position: absolute;
+            top: initial;
+            bottom: -20px;
+            
+            left: 110px;
+            z-index: 1;
+
+            transform: rotate(45deg) translateY(20%) ;
+            
+            img{
+                max-width: 100vw;
+                max-height: 100vw;
+            }
+        }  
+    }
 }
 
 .where_to_buy {
+    position: relative;
+    z-index: 2;
+
     background: #F7F7F7;
     padding-top: 52px;
     padding-bottom: 71px;
