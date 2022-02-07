@@ -461,6 +461,7 @@ template {
 
 .navigation .navigation__buy .buy__img {
   margin-left: 48px;
+  margin-bottom: -3px;
 }
 
 .nav_mb {
