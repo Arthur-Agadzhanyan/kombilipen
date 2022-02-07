@@ -131,6 +131,7 @@ a{
 
 .intro{
     position: relative;
+
     padding-top: 178px;
     padding-bottom: 60px;
     background: linear-gradient(to right, $aqua_1 50%, white 50%);
@@ -375,6 +376,8 @@ a{
     }
 
     .content__btn {
+        position: relative;
+
         display: block;
         margin-left: auto;
         @include text(#fff,22px,bold);
@@ -384,8 +387,34 @@ a{
         position: relative;
         z-index: 2;
 
-        background: linear-gradient(180deg, #FF0082 30%, rgb(46, 0, 23) 200%);
+        moz-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+        background-size: 1300% 100%;
+
+        background-image: linear-gradient(180deg, #FF0082 30%, rgb(46, 0, 23) 200%);
         // box-shadow: 0px 64.3333px 128.667px , inset 0px -21.4444px 21.4444px #B8005D, inset 0px 21.4444px 21.4444px #FF0087;
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: linear-gradient(180deg, #FF0082 0%, rgb(46, 0, 23) 160%);
+            z-index: -1;
+            transition: opacity 0.2s linear;
+            opacity: 0;
+          }
+
+        &:hover{
+            &::before{
+                opacity: 1;
+            }
+        }
+        
         @media screen and (max-width: 1650px) {
             margin-top: 30px;
         }
@@ -1150,6 +1179,7 @@ a{
         }
 
         .content__btn {
+            position: relative;
             display: block;
             margin-left: auto;
             @include text(#fff,22px,bold);
@@ -1165,6 +1195,34 @@ a{
             
             position: relative;
             z-index: 2;
+
+            moz-transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+            background-size: 1300% 100%;
+
+            background-image: linear-gradient(180deg, #FF0082 30%, rgb(46, 0, 23) 200%);
+            // box-shadow: 0px 64.3333px 128.667px , inset 0px -21.4444px 21.4444px #B8005D, inset 0px 21.4444px 21.4444px #FF0087;
+
+            &::before {
+                position: absolute;
+                content: "";
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background-image: linear-gradient(180deg, #FF0082 0%, rgb(46, 0, 23) 160%);
+                z-index: -1;
+                transition: opacity 0.2s linear;
+                opacity: 0;
+            }
+
+            &:hover{
+                &::before{
+                    opacity: 1;
+                }
+            }
 
             @media screen and (max-width: 1100px) {
                 margin-left: 0px;

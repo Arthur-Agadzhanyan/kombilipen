@@ -16,6 +16,7 @@ function testWebP(callback) {
     }
 });;
 
+AOS.init()
 
 const navbarBtn = document.getElementById("navbar__btn")
 const mobileBar = document.querySelector(".mobile_bar")

@@ -894,6 +894,7 @@ a {
 }
 
 .intro .content__btn {
+  position: relative;
   display: block;
   margin-left: auto;
   color: #fff;
@@ -905,9 +906,35 @@ a {
   cursor: pointer;
   position: relative;
   z-index: 2;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #FF0082), color-stop(200%, #2e0017));
-  background: -o-linear-gradient(top, #FF0082 30%, #2e0017 200%);
-  background: linear-gradient(180deg, #FF0082 30%, #2e0017 200%);
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  background-size: 1300% 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #FF0082), color-stop(200%, #2e0017));
+  background-image: -o-linear-gradient(top, #FF0082 30%, #2e0017 200%);
+  background-image: linear-gradient(180deg, #FF0082 30%, #2e0017 200%);
+}
+
+.intro .content__btn::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF0082), color-stop(160%, #2e0017));
+  background-image: -o-linear-gradient(top, #FF0082 0%, #2e0017 160%);
+  background-image: linear-gradient(180deg, #FF0082 0%, #2e0017 160%);
+  z-index: -1;
+  -webkit-transition: opacity 0.2s linear;
+  -o-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+  opacity: 0;
+}
+
+.intro .content__btn:hover::before {
+  opacity: 1;
 }
 
 .intro .bg_img {
@@ -1232,6 +1259,7 @@ a {
 }
 
 .how_to_apply .how_to_apply__content .content__btn {
+  position: relative;
   display: block;
   margin-left: auto;
   color: #fff;
@@ -1249,6 +1277,35 @@ a {
   margin-top: auto;
   position: relative;
   z-index: 2;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  background-size: 1300% 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #FF0082), color-stop(200%, #2e0017));
+  background-image: -o-linear-gradient(top, #FF0082 30%, #2e0017 200%);
+  background-image: linear-gradient(180deg, #FF0082 30%, #2e0017 200%);
+}
+
+.how_to_apply .how_to_apply__content .content__btn::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF0082), color-stop(160%, #2e0017));
+  background-image: -o-linear-gradient(top, #FF0082 0%, #2e0017 160%);
+  background-image: linear-gradient(180deg, #FF0082 0%, #2e0017 160%);
+  z-index: -1;
+  -webkit-transition: opacity 0.2s linear;
+  -o-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+  opacity: 0;
+}
+
+.how_to_apply .how_to_apply__content .content__btn:hover::before {
+  opacity: 1;
 }
 
 .how_to_apply .bg__image {
