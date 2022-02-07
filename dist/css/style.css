@@ -1935,9 +1935,17 @@ a {
     padding: 10px 0px;
   }
 
+  .mobile_bar .navbar__list {
+    padding-top: 0px;
+  }
+
+  .mobile_bar .navbar__buy {
+    margin-top: -80px;
+  }
+
   .mobile_bar {
-    top: 50.27px;
-    min-height: calc(100vh - 61px);
+    top: 50px;
+    min-height: calc(100vh - 50px);
   }
 
   .section__title {
