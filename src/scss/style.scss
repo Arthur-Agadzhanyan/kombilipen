@@ -283,7 +283,13 @@ a{
             }
 
             @media screen and (min-width: 2400px){
-                margin-left: 16vw;
+                margin-left: 12vw;
+                max-width: 35vw;
+                width: 100%;
+
+                img{
+                    width: 100%;
+                }
             }
 
             @media screen and (min-width: 2300px){
@@ -293,8 +299,6 @@ a{
             @media screen and (min-width: 2100px){
                 margin-left: 12vw;
             }
-
-            
 
             @media screen and (max-width: 1650px) {
                 max-width: 40vw;
@@ -484,11 +488,8 @@ a{
     }
 
     @media screen and (min-width: 2400px){
-        padding-top: 250px;
-    }
-
-    @media screen and (min-width: 2500px){
-        padding-top: 270px;
+        padding-top: 20vh;
+        min-height: calc(101vh - 104px);
     }
 }
 

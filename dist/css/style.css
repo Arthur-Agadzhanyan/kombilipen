@@ -1403,17 +1403,18 @@ a {
 
 @media screen and (min-width: 2400px) {
   .intro .intro__content .content__img {
-    margin-left: 16vw;
+    margin-left: 12vw;
+    max-width: 35vw;
+    width: 100%;
+  }
+
+  .intro .intro__content .content__img img {
+    width: 100%;
   }
 
   .intro {
-    padding-top: 250px;
-  }
-}
-
-@media screen and (min-width: 2500px) {
-  .intro {
-    padding-top: 270px;
+    padding-top: 20vh;
+    min-height: calc(101vh - 104px);
   }
 }
 
