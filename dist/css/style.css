@@ -1370,6 +1370,53 @@ a {
   max-width: 100%;
 }
 
+@media screen and (min-width: 2100px) {
+  .intro .intro__content .content__img {
+    margin-left: 12vw;
+  }
+
+  .intro {
+    padding-top: 238px;
+  }
+
+  .benefits {
+    padding-top: 120px;
+  }
+}
+
+@media screen and (min-width: 2200px) {
+  .benefits {
+    padding-top: 140px;
+  }
+}
+
+@media screen and (min-width: 2300px) {
+  .intro .intro__content .content__img {
+    margin-left: 15vw;
+  }
+
+  .benefits {
+    min-height: 70vh;
+    padding-bottom: 140px;
+  }
+}
+
+@media screen and (min-width: 2400px) {
+  .intro .intro__content .content__img {
+    margin-left: 16vw;
+  }
+
+  .intro {
+    padding-top: 250px;
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  .intro {
+    padding-top: 270px;
+  }
+}
+
 @media screen and (max-width: 1650px) {
   .intro .intro__content .content__img {
     max-width: 40vw;
