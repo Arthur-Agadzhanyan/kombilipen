@@ -23,8 +23,11 @@
 
         .links__brand {
             margin-right: 20px;
-            @media screen and (max-width: 1350px) {
-
+            @media screen and (min-width: 2100px) {
+                min-width: 153px;
+                img{
+                    width: 100%;
+                }
             }
         }
 

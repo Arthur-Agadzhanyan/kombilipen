@@ -1371,6 +1371,14 @@ a {
 }
 
 @media screen and (min-width: 2100px) {
+  .navigation .navigation__links .links__brand {
+    min-width: 153px;
+  }
+
+  .navigation .navigation__links .links__brand img {
+    width: 100%;
+  }
+
   .intro .intro__content .content__img {
     margin-left: 12vw;
   }
