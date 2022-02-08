@@ -743,6 +743,9 @@ template {
 
 html {
   scroll-behavior: smooth;
+  -webkit-transition: scroll-behavior 1s linear;
+  -o-transition: scroll-behavior 1s linear;
+  transition: scroll-behavior 1s linear;
 }
 
 body {
