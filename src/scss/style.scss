@@ -60,6 +60,83 @@ a{
     }
 }
 
+.text_section{
+    max-width: 1200px;
+    width: 100%;
+    
+    margin: 0 auto;
+
+    .text-container{
+        max-width: 850px;
+        padding: 0px 15px;
+        width: 100%;
+        margin: 0 auto;
+
+        .block__text{
+            @include text(#000,24px,400,140%);
+        }
+
+        .block__list{
+            list-style: disc;
+            padding-top: 5px;
+
+            li{
+                padding-top: 5px;
+                margin-left: 30px;
+                font-weight: 500;
+                font-size: 23px;
+            }
+        }
+
+        .section__title{
+            font-size: 53px;
+            font-weight: 800;
+            line-height: 110%;
+
+            @media screen and (max-width: 1450px) {
+                font-size: 42px;
+            }
+            @media screen and (max-width: 1100px) {
+                font-size: 35px;
+            }
+            @media screen and (max-width: 400px) {
+                font-size: 25px;
+            }
+
+            @media screen and (max-width: 350px) {
+                font-size: 23px;
+            }
+        }
+    }
+
+    &-grey{
+        background: #F2F2F2;
+        padding-top: 62px;
+
+        .text-container{
+            .block__list{
+                li{
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+    .section__green{
+        background: $aqua_2;
+        padding: 46px 0px 39px 0px;
+        margin-top: 50px;
+        
+        .block__text{
+            color: #fff;
+        }
+
+        strong{
+            font-weight: bold !important;
+        }
+    }
+}
+
 .section__title{
     @include text(#fff,62px,bold);
     display: flex;
@@ -511,6 +588,7 @@ a{
 
         .info__title {
             color: $crimson_1;
+            font-weight: 800;
 
             @media screen and (max-width: 1450px) {
                 font-size: 42px;
@@ -1164,7 +1242,7 @@ a{
             z-index: 2;
             
             img{
-                max-width: 100%;
+                max-width: 70%;
             }
 
             .how_to_apply_vitamins {
@@ -1172,6 +1250,9 @@ a{
                 position: absolute;
                 top: 55px;
                 right: 0;
+
+                max-width: 40%;
+                width: 100%;
 
                 transform: translateX(42%);
                 
@@ -1458,3 +1539,179 @@ a{
     }
 }
 
+// Second Page
+
+.text_deficit{
+    padding-top: 114px;
+
+    .deficit__info {
+        position: relative;
+        z-index: 2;
+
+        .info__title {
+            
+            max-width: 665px;
+            color: $crimson_1;
+            font-weight: 800;
+            margin-bottom: 26px;
+
+            @media screen and (max-width: 1450px) {
+                font-size: 42px;
+            }
+
+            @media screen and (max-width: 1200px) {
+                max-width: 70vw;
+            }
+            @media screen and (max-width: 1100px) {
+                max-width: 85vw;
+                font-weight: 800;
+                font-size: 35px;
+            }
+            @media screen and (max-width: 700px) {
+                
+                max-width: 80vw;
+            }
+
+            @media screen and (max-width: 500px) {
+                max-width: 85vw;
+                
+            }
+            @media screen and (max-width: 400px) {
+                max-width: 85vw;
+                font-size: 25px;
+                font-weight: 800;
+            }
+
+            @media screen and (max-width: 350px) {
+                font-size: 23px;
+            }
+        }
+
+        .block__text{
+            margin-bottom: 40px;
+        }
+
+        @media screen and (max-width: 900px) {
+            margin-bottom: 50px;
+        }
+
+        @media screen and (max-width: 500px) {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.text_vitamins{
+    padding-top: 53px;
+    margin-bottom: 73px;
+
+    .text-container{
+        max-width: 900px;
+
+        .info__name{
+            margin-bottom: 23px;
+            .name__title, .name__subtitle{
+                color: #000 !important;
+            }
+            span{
+                color: #000 !important;
+            }
+        }
+
+        .big_text{
+            @include text(#000,30px,normal);
+            margin-bottom: 50px;
+        }
+
+        .vitamins__img {
+            position: relative;
+            margin-bottom: 40px;
+
+            .img__main{
+                max-width: 80%;
+            }
+
+
+            .img_vitamins {
+                position: absolute;
+                top: -25px;
+                right: 0;
+
+                transform: translateX(20%);
+            }
+        }
+        
+    }
+}
+
+.text_vitamins__grey{
+    .section__title{
+        color: #019D97;
+        margin-bottom: 33px;
+    }
+
+    .content__block{
+        margin-bottom: 42px;
+    }
+
+    .block__list{
+        li{
+            padding-bottom: 9px;
+        }
+    }
+}
+
+.text_vitamins_back{
+    padding-top: 80px;
+
+    .text-container{
+        max-width: 843px;
+
+        .block__list{
+            padding-top: 0px;
+            li{
+                font-weight: 400;
+            }
+        }
+    }
+
+    .block__text{
+        margin-bottom: 30px;
+    }
+
+    
+
+    .section__title{
+        color: #019D97;
+        font-weight: 800;
+        line-height: 120%;
+        margin-bottom: 30px;
+    }
+}
+
+.green_section{
+    width: 100%;
+    background: #00AFAA;
+}
+
+.text_effects{
+    padding-top: 60px;
+    padding-bottom: 55px;
+
+    .section__title{
+        margin-bottom: 22px;
+    }
+
+    .block__text{
+        color: #fff;
+    }
+
+    .text-container{
+        .block__list{
+            li{
+                color: #fff;
+                font-weight: bold;
+            }
+        }
+    }
+}
