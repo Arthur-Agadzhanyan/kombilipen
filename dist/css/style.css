@@ -1311,7 +1311,7 @@ a {
 }
 
 .how_to_apply .how_to_apply__content .content__img img {
-  max-width: 70%;
+  max-width: 100%;
 }
 
 .how_to_apply .how_to_apply__content .content__img .how_to_apply_vitamins {
@@ -1319,8 +1319,6 @@ a {
   position: absolute;
   top: 55px;
   right: 0;
-  max-width: 40%;
-  width: 100%;
   -webkit-transform: translateX(42%);
       -ms-transform: translateX(42%);
           transform: translateX(42%);
@@ -2095,6 +2093,22 @@ a {
     font-weight: 800;
     font-size: 35px;
   }
+
+  .text_vitamins .text-container .vitamins__img {
+    max-width: 70%;
+  }
+
+  .text_vitamins .text-container .vitamins__img .img_vitamins {
+    max-width: 50%;
+    top: -15px;
+    -webkit-transform: translateX(38%);
+        -ms-transform: translateX(38%);
+            transform: translateX(38%);
+  }
+
+  .text_vitamins .text-container .vitamins__img .img_vitamins img {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -2159,6 +2173,11 @@ a {
 }
 
 @media screen and (max-width: 900px) {
+  .text_section .text-container {
+    padding: 0px 40px;
+    margin: 0;
+  }
+
   .deficit .deficit__info {
     margin-bottom: 50px;
   }
@@ -2249,8 +2268,8 @@ a {
     padding-bottom: 51px;
   }
 
-  .text_deficit .deficit__info {
-    margin-bottom: 50px;
+  .text_deficit {
+    padding-top: 60px;
   }
 }
 
@@ -2284,6 +2303,14 @@ a {
   .mobile_bar {
     top: 50px;
     min-height: calc(100vh - 50px);
+  }
+
+  .text_section .text-container .block__text {
+    font-size: 20px;
+  }
+
+  .text_section .text-container .block__list li {
+    font-size: 20px;
   }
 
   .section__title {
@@ -2376,10 +2403,26 @@ a {
   .text_deficit .deficit__info .info__title {
     max-width: 80vw;
   }
+
+  .text_deficit .deficit__info .block__text {
+    margin-bottom: 20px;
+  }
+
+  .text_vitamins .text-container .big_text {
+    font-size: 23px;
+  }
+
+  .text_vitamins .text-container .vitamins__img {
+    max-width: 85%;
+  }
 }
 
 @media screen and (max-width: 650px) {
   .container {
+    padding: 0px 20px;
+  }
+
+  .text_section .text-container {
     padding: 0px 20px;
   }
 
@@ -2646,10 +2689,6 @@ a {
   .text_deficit .deficit__info .info__title {
     max-width: 85vw;
   }
-
-  .text_deficit .deficit__info {
-    margin-bottom: 30px;
-  }
 }
 
 @media screen and (max-width: 450px) {
@@ -2701,8 +2740,29 @@ a {
     padding: 0px 16px;
   }
 
+  .text_section .text-container .block__text {
+    font-size: 18px;
+  }
+
+  .text_section .text-container .block__list li {
+    font-size: 18px;
+  }
+
   .text_section .text-container .section__title {
     font-size: 25px;
+  }
+
+  .text_section .text-container {
+    padding: 0px 16px;
+  }
+
+  .text_section-grey {
+    padding-top: 34px;
+  }
+
+  .text_section .section__green {
+    padding: 36px 0px 29px 0px;
+    margin-top: 34px;
   }
 
   .intro .intro__content .content__info {
@@ -2860,6 +2920,48 @@ a {
     font-size: 25px;
     font-weight: 800;
   }
+
+  .text_deficit {
+    padding-top: 35px;
+  }
+
+  .text_vitamins .text-container .big_text {
+    font-size: 21px;
+  }
+
+  .text_vitamins {
+    padding-top: 34px;
+    margin-bottom: 34px;
+  }
+
+  .text_vitamins__grey .section__title {
+    margin-bottom: 12px;
+  }
+
+  .text_vitamins__grey .content__block {
+    margin-bottom: 34px;
+  }
+
+  .text_vitamins_back {
+    padding-top: 35px;
+  }
+
+  .text_vitamins_back .section__title {
+    margin-bottom: 18px;
+  }
+
+  .text_vitamins_back .block__text {
+    margin-bottom: 20px;
+  }
+
+  .text_effects {
+    padding-top: 40px;
+    padding-bottom: 35px;
+  }
+
+  .text_effects .section__title {
+    margin-bottom: 12px;
+  }
 }
 
 @media screen and (max-width: 380px) {
@@ -2930,8 +3032,22 @@ a {
     line-height: normal;
   }
 
+  .text_section .text-container .block__text {
+    font-size: 16px;
+  }
+
+  .text_section .text-container .block__list li {
+    font-size: 16px;
+    margin-left: 25px;
+  }
+
   .text_section .text-container .section__title {
     font-size: 23px;
+  }
+
+  .text_section .section__green {
+    margin-top: 30px;
+    padding: 32px 0px 32px 0px;
   }
 
   .deficit .deficit__info .info__title {
@@ -2948,6 +3064,11 @@ a {
 
   .text_deficit .deficit__info .info__title {
     font-size: 23px;
+  }
+
+  .text_effects .section__title {
+    font-size: 20px !important;
+    margin-bottom: 3px;
   }
 }
 

@@ -33,12 +33,18 @@ listLinks.forEach((link)=>{
 
 const anchors = document.querySelectorAll('a[href*="#"]')
 
+const path = window.location.pathname
+
 for (let anchor of anchors) {
   anchor.addEventListener('click', function (e) {
     e.preventDefault()
     
     const blockID = anchor.getAttribute('href').substr(1)
     
+    if(path !== "/" && path !== '/index.html'){
+      window.location.pathname = '/index.html'
+    }
+
     document.getElementById(blockID).scrollIntoView({
       behavior: 'smooth',
       block: 'start'

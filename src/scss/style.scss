@@ -74,6 +74,16 @@ a{
 
         .block__text{
             @include text(#000,24px,400,140%);
+
+            @media screen and (max-width: 700px) {
+                font-size: 20px;
+            }
+            @media screen and (max-width: 400px) {
+                font-size: 18px;
+            }
+            @media screen and (max-width: 350px) {
+                font-size: 16px;
+            }
         }
 
         .block__list{
@@ -85,6 +95,17 @@ a{
                 margin-left: 30px;
                 font-weight: 500;
                 font-size: 23px;
+
+                @media screen and (max-width: 700px) {
+                    font-size: 20px;
+                }
+                @media screen and (max-width: 400px) {
+                    font-size: 18px;
+                }
+                @media screen and (max-width: 350px) {
+                    font-size: 16px;
+                    margin-left: 25px;
+                }
             }
         }
 
@@ -107,6 +128,18 @@ a{
                 font-size: 23px;
             }
         }
+
+        @media screen and (max-width: 900px) {
+            padding: 0px 40px;
+            margin: 0;
+        }
+    
+        @media screen and (max-width: 650px) {
+            padding: 0px 20px;
+        }
+        @media screen and (max-width: 400px) {
+            padding: 0px 16px;
+        }
     }
 
     &-grey{
@@ -119,6 +152,9 @@ a{
                     font-weight: 400;
                 }
             }
+        }
+        @media screen and (max-width: 400px) {
+            padding-top: 34px;
         }
     }
 
@@ -133,6 +169,15 @@ a{
 
         strong{
             font-weight: bold !important;
+        }
+
+        @media screen and (max-width: 400px) {
+            padding: 36px 0px 29px 0px;
+            margin-top: 34px;
+        }
+        @media screen and (max-width: 350px) {
+            margin-top: 30px;
+            padding: 32px 0px 32px 0px;
         }
     }
 }
@@ -1242,7 +1287,7 @@ a{
             z-index: 2;
             
             img{
-                max-width: 70%;
+                max-width: 100%;
             }
 
             .how_to_apply_vitamins {
@@ -1250,9 +1295,6 @@ a{
                 position: absolute;
                 top: 55px;
                 right: 0;
-
-                max-width: 40%;
-                width: 100%;
 
                 transform: translateX(42%);
                 
@@ -1589,15 +1631,19 @@ a{
 
         .block__text{
             margin-bottom: 40px;
-        }
 
-        @media screen and (max-width: 900px) {
-            margin-bottom: 50px;
+            @media screen and (max-width: 700px) {
+                margin-bottom: 20px;
+            }
         }
+    }
 
-        @media screen and (max-width: 500px) {
-            margin-bottom: 30px;
-        }
+    @media screen and (max-width: 900px) {
+        padding-top: 60px;
+    }
+
+    @media screen and (max-width: 400px) {
+        padding-top: 35px;
     }
 }
 
@@ -1621,6 +1667,14 @@ a{
         .big_text{
             @include text(#000,30px,normal);
             margin-bottom: 50px;
+
+            @media screen and (max-width: 700px) {
+                font-size: 23px;
+            }
+
+            @media screen and (max-width: 400px) {
+                font-size: 21px;
+            }
         }
 
         .vitamins__img {
@@ -1639,8 +1693,32 @@ a{
 
                 transform: translateX(20%);
             }
+
+            @media screen and (max-width: 1100px) {
+                max-width: 70%;
+
+                .img_vitamins{
+                    max-width: 50%;
+                    top: -15px;
+                    transform: translateX(38%);
+
+                    img{
+                        
+                        width: 100%;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 700px) {
+                max-width: 85%;
+            }
         }
         
+    }
+
+    @media screen and (max-width: 400px) {
+        padding-top: 34px;
+        margin-bottom: 34px;
     }
 }
 
@@ -1648,10 +1726,18 @@ a{
     .section__title{
         color: #019D97;
         margin-bottom: 33px;
+
+        @media screen and (max-width: 400px) {
+            margin-bottom: 12px;
+        }
     }
 
     .content__block{
         margin-bottom: 42px;
+
+        @media screen and (max-width: 400px) {
+            margin-bottom: 34px;
+        }
     }
 
     .block__list{
@@ -1679,13 +1765,23 @@ a{
         margin-bottom: 30px;
     }
 
-    
-
     .section__title{
         color: #019D97;
         font-weight: 800;
         line-height: 120%;
         margin-bottom: 30px;
+    }
+
+    @media screen and (max-width: 400px) {
+        padding-top: 35px;
+
+        .section__title{
+            margin-bottom: 18px;
+        }
+
+        .block__text{
+            margin-bottom: 20px;
+        }
     }
 }
 
@@ -1712,6 +1808,22 @@ a{
                 color: #fff;
                 font-weight: bold;
             }
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        padding-top: 40px;
+        padding-bottom: 35px;
+
+        .section__title{
+            margin-bottom: 12px;
+        }
+    }
+
+    @media screen and (max-width: 350px) {
+        .section__title{
+            font-size: 20px !important;
+            margin-bottom: 3px;
         }
     }
 }
