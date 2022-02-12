@@ -624,9 +624,13 @@ template {
   color: #656565;
 }
 
-.mobile_bar .navbar__buy {
+.mobile_bar .navbar__btn_link {
+  display: block;
   margin: 0 auto;
   margin-top: -50px;
+}
+
+.mobile_bar .navbar__buy {
   background: #fff;
   padding: 15px 80px;
   color: #454545;
@@ -868,6 +872,11 @@ a {
   font-weight: normal;
   line-height: 29px;
   margin-bottom: 20px;
+}
+
+.btn_link {
+  display: block;
+  margin-top: auto;
 }
 
 .intro {
@@ -2356,7 +2365,7 @@ a {
     padding-top: 0px;
   }
 
-  .mobile_bar .navbar__buy {
+  .mobile_bar .navbar__btn_link {
     margin-top: -80px;
   }
 
@@ -2659,6 +2668,10 @@ a {
     font-size: 20px;
     font-weight: normal;
     line-height: initial;
+  }
+
+  .btn_link {
+    width: 100%;
   }
 
   .intro .intro__content .content__info .info__slogan {

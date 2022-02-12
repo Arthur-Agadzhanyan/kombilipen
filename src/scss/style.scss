@@ -257,6 +257,15 @@ a{
     }
 }
 
+.btn_link{
+    display: block;
+    margin-top: auto;
+
+    @media screen and (max-width: 500px) {
+        width: 100%;
+    }
+}
+
 .intro{
     position: relative;
 

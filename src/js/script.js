@@ -3,61 +3,63 @@
 AOS.init()
 
 // Intro
+const path = window.location.pathname
 
-const introBox = document.getElementById('intro_box')
-const introBoxSecond = document.getElementById('intro_box_second')
-const radioFirst = document.getElementById('radio_btn_1')
-const radioSecond = document.getElementById('radio_btn_2')
-
-let currBox = 1;
-
-radioFirst.addEventListener('click',()=>{
-  if(currBox == 1){
-    return false
-  }
-
-  introBoxSecond.style.opacity = '0';
-  introBoxSecond.style.position = 'absolute'
-  introBoxSecond.style.display = 'none'
-
+if(path == "/" || path == '/index.html'){
+  const introBox = document.getElementById('intro_box')
+  const introBoxSecond = document.getElementById('intro_box_second')
+  const radioFirst = document.getElementById('radio_btn_1')
+  const radioSecond = document.getElementById('radio_btn_2')
   
-  setTimeout(()=>{
+  let currBox = 1;
+  
+  radioFirst.addEventListener('click',()=>{
+    if(currBox == 1){
+      return false
+    }
+  
+    introBoxSecond.style.opacity = '0';
+    introBoxSecond.style.position = 'absolute'
     introBoxSecond.style.display = 'none'
-  }, 100),
-
-  setTimeout(()=>{
-    introBox.style.opacity = '1'
+  
     
-  }, 100)
-
-  introBox.style.display = 'initial'
-  introBox.style.position = 'initial'
+    setTimeout(()=>{
+      introBoxSecond.style.display = 'none'
+    }, 100),
   
-  currBox = 1
-})
-
-radioSecond.addEventListener('click',()=>{
-  if(currBox == 2){
-    return false
-  }
-
-  introBox.style.opacity = '0';
-  introBox.style.position = 'absolute'
-
-  setTimeout(()=>{
-    introBox.style.display = 'none'
-  }, 100),
-
-  setTimeout(()=>{
-    introBoxSecond.style.opacity = '1'
-  }, 100)
-
-  introBoxSecond.style.position = 'relative'
-  introBoxSecond.style.display = 'initial'
+    setTimeout(()=>{
+      introBox.style.opacity = '1'
+      
+    }, 100)
   
-  currBox = 2
-})
-
+    introBox.style.display = 'initial'
+    introBox.style.position = 'initial'
+    
+    currBox = 1
+  })
+  
+  radioSecond.addEventListener('click',()=>{
+    if(currBox == 2){
+      return false
+    }
+  
+    introBox.style.opacity = '0';
+    introBox.style.position = 'absolute'
+  
+    setTimeout(()=>{
+      introBox.style.display = 'none'
+    }, 100),
+  
+    setTimeout(()=>{
+      introBoxSecond.style.opacity = '1'
+    }, 100)
+  
+    introBoxSecond.style.position = 'relative'
+    introBoxSecond.style.display = 'initial'
+    
+    currBox = 2
+  })
+}
 
 // Navigation
 const navbarBtn = document.getElementById("navbar__btn")
@@ -91,21 +93,25 @@ listLinks.forEach((link)=>{
 
 const anchors = document.querySelectorAll('a[href*="#"]')
 
-const path = window.location.pathname
+
 
 for (let anchor of anchors) {
   anchor.addEventListener('click', function (e) {
-    e.preventDefault()
-    
-    const blockID = anchor.getAttribute('href').substr(1)
-    
-    if(path !== "/" && path !== '/index.html'){
-      window.location.pathname = '/index.html'
+    if(anchor.getAttribute('href') === "#"){
+      return false
     }
 
-    document.getElementById(blockID).scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-    })
+    e.preventDefault()
+
+    const blockID = anchor.getAttribute('href').substr(1)
+
+      if(path !== "/" && path !== '/index.html'){
+        window.location.pathname = '/index.html'
+      }
+  
+      document.getElementById(blockID).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      })
   })
 }
