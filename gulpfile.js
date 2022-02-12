@@ -16,7 +16,7 @@ let path = { // содержит объекты которые будут сод
         html: [sourceFolder + '/*.html', '!' + sourceFolder + '/_*.html'],// сначала мы просматриваем все файлы html , а потом исключаем те файлы, которые которые начинаются на _
         css: sourceFolder + '/scss/style.scss',// gulp будет обрабатывать только файл style.scss, а не все файлы находящиеся в папке scss
         js: sourceFolder + '/js/script.js',// gulp будет обрабатывать только файл script.js, а не все файлы находящиеся в папке js
-        img: sourceFolder + '/img/**/*.{png,jpg,svg,webp,gif,ico}',// /**/ означает что мы будем просматривать не только контент в папке /img, но и контент внутри папок которые лежат в /img, *.{png,jpg,svg,webp,gif,ico} указывает на то, что мы просматриваем только файлы с расширениями png,jpg,svg,webp,gif,ico
+        img: sourceFolder + '/img/**/*.{png,jpg,svg,webp,gif,ico,pdf}',// /**/ означает что мы будем просматривать не только контент в папке /img, но и контент внутри папок которые лежат в /img, *.{png,jpg,svg,webp,gif,ico} указывает на то, что мы просматриваем только файлы с расширениями png,jpg,svg,webp,gif,ico
         fonts: sourceFolder + '/fonts/*.ttf' // указывает на то, что мы просматриваем только файлы с расширением .ttf
     },
 
@@ -24,7 +24,7 @@ let path = { // содержит объекты которые будут сод
         html: sourceFolder + '/**/*.html',
         css: sourceFolder + '/scss/**/*.scss',
         js: sourceFolder + '/js/**/*.js',
-        img: sourceFolder + '/img/**/*.{png,jpg,svg,webp,gif,ico}'
+        img: sourceFolder + '/img/**/*.{png,jpg,svg,webp,gif,ico,pdf}'
         // шрифты слушать постоянно нам не нужно
     },
 

@@ -36,15 +36,15 @@
             .list__item {
                 margin-right: 24px;
                 @include text($grey_1,14px,bold);
-
-                @media screen and (max-width: 1550px) {
-                    margin-right: 8px; 
-                    font-size: 13px;
+                @media screen and (max-width: 1450px) {
+                    margin-right: 14px;
+                }
+                @media screen and (max-width: 1350px) {
+                    margin-right: 10px; 
                 }
 
-                @media screen and (max-width: 1300px) {
-                    margin-right: 10px; 
-                    font-size: 12px;
+                @media screen and (max-width: 1250px) {
+                    margin-right: 18px; 
                 }
             }
         }
@@ -81,7 +81,7 @@
                 margin-left: 25px;
             }
 
-            @media screen and (max-width: 1300px) {
+            @media screen and (max-width: 1250px) {
                 display: none;
             }
         }
