@@ -1742,6 +1742,23 @@ a{
 .first_vitamins{
     .section__green{
         padding-bottom: 240px;
+
+        @media screen and (max-width: 700px) {
+            padding-bottom: 170px;
+            margin-top: 24px;
+        }
+
+        @media screen and (max-width: 500px) {
+            padding-bottom: 120px;
+        }
+
+        @media screen and (max-width: 400px) {
+            padding-bottom: 125px;
+        }
+
+        @media screen and (max-width: 350px) {
+            padding-bottom: 100px;
+        }
     }
 }
 
@@ -1752,6 +1769,22 @@ a{
         .block__text{
             font-size: 18px;
         }
+    }
+
+    @media screen and (max-width: 700px) {
+        margin-top: -170px;
+    }
+
+    @media screen and (max-width: 500px) {
+        margin-top: -130px;
+    }
+
+    @media screen and (max-width: 400px) {
+        margin-top: -130px;
+    }
+
+    @media screen and (max-width: 350px) {
+        margin-top: -85px;
     }
 }
 
@@ -1778,6 +1811,14 @@ a{
 
         .block__text{
             margin-bottom: 45px;
+
+            @media screen and (max-width: 500px) {
+                margin-bottom: 24px;
+            }
+
+            @media screen and (max-width: 350px) {
+                margin-bottom: 16px;
+            }
         }
 
         .vitamins__img {
@@ -1786,6 +1827,16 @@ a{
 
             .img__main{
                 max-width: 80%;
+
+                @media screen and (max-width: 900px) {
+                    max-width: 85%;
+                }
+
+                @media screen and (max-width: 700px) {
+                    max-width: 80%;
+                }
+
+               
             }
 
 
@@ -1806,7 +1857,20 @@ a{
                     transform: translateX(38%);
 
                     img{
-                        
+                        width: 100%;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 900px) {
+                max-width: 70%;
+
+                .img_vitamins{
+                    max-width: 50%;
+                    top: -15px;
+                    transform: translateX(50%);
+
+                    img{
                         width: 100%;
                     }
                 }
@@ -1814,6 +1878,24 @@ a{
 
             @media screen and (max-width: 700px) {
                 max-width: 85%;
+
+                .img_vitamins{
+                    max-width: 50%;
+                    top: -15px;
+                    transform: translateX(38%);
+
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 500px) {
+                margin-bottom: 22px;
+            }
+
+            @media screen and (max-width: 350px) {
+                margin-bottom: 16px;
             }
         }
         

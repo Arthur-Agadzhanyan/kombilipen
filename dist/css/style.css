@@ -2295,6 +2295,26 @@ a {
   .text_deficit {
     padding-top: 60px;
   }
+
+  .text_vitamins .text-container .vitamins__img .img__main {
+    max-width: 85%;
+  }
+
+  .text_vitamins .text-container .vitamins__img {
+    max-width: 70%;
+  }
+
+  .text_vitamins .text-container .vitamins__img .img_vitamins {
+    max-width: 50%;
+    top: -15px;
+    -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+
+  .text_vitamins .text-container .vitamins__img .img_vitamins img {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -2437,12 +2457,37 @@ a {
     margin-bottom: 20px !important;
   }
 
+  .first_vitamins .section__green {
+    padding-bottom: 170px;
+    margin-top: 24px;
+  }
+
+  .second_vitamins {
+    margin-top: -170px;
+  }
+
   .text_vitamins .text-container .big_text {
     font-size: 23px;
   }
 
+  .text_vitamins .text-container .vitamins__img .img__main {
+    max-width: 80%;
+  }
+
   .text_vitamins .text-container .vitamins__img {
     max-width: 85%;
+  }
+
+  .text_vitamins .text-container .vitamins__img .img_vitamins {
+    max-width: 50%;
+    top: -15px;
+    -webkit-transform: translateX(38%);
+        -ms-transform: translateX(38%);
+            transform: translateX(38%);
+  }
+
+  .text_vitamins .text-container .vitamins__img .img_vitamins img {
+    width: 100%;
   }
 
   .text_vitamins__grey {
@@ -2726,6 +2771,22 @@ a {
   .text_deficit .deficit__info .info__title {
     max-width: 85vw;
   }
+
+  .first_vitamins .section__green {
+    padding-bottom: 120px;
+  }
+
+  .second_vitamins {
+    margin-top: -130px;
+  }
+
+  .text_vitamins .text-container .block__text {
+    margin-bottom: 24px;
+  }
+
+  .text_vitamins .text-container .vitamins__img {
+    margin-bottom: 22px;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -2979,6 +3040,14 @@ a {
     padding-top: 35px;
   }
 
+  .first_vitamins .section__green {
+    padding-bottom: 125px;
+  }
+
+  .second_vitamins {
+    margin-top: -130px;
+  }
+
   .text_vitamins .text-container .big_text {
     font-size: 21px;
   }
@@ -3092,6 +3161,22 @@ a {
 
   .text_deficit .deficit__info .info__title {
     font-size: 23px;
+  }
+
+  .first_vitamins .section__green {
+    padding-bottom: 100px;
+  }
+
+  .second_vitamins {
+    margin-top: -85px;
+  }
+
+  .text_vitamins .text-container .block__text {
+    margin-bottom: 16px;
+  }
+
+  .text_vitamins .text-container .vitamins__img {
+    margin-bottom: 16px;
   }
 }
 
