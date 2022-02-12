@@ -18,6 +18,64 @@ function testWebP(callback) {
 
 AOS.init()
 
+// Intro
+
+const introBox = document.getElementById('intro_box')
+const introBoxSecond = document.getElementById('intro_box_second')
+const radioFirst = document.getElementById('radio_btn_1')
+const radioSecond = document.getElementById('radio_btn_2')
+
+let currBox = 1;
+
+radioFirst.addEventListener('click',()=>{
+  if(currBox == 1){
+    return false
+  }
+
+  introBoxSecond.style.opacity = '0';
+  introBoxSecond.style.position = 'absolute'
+  introBoxSecond.style.display = 'none'
+
+  
+  setTimeout(()=>{
+    introBoxSecond.style.display = 'none'
+  }, 100),
+
+  setTimeout(()=>{
+    introBox.style.opacity = '1'
+    
+  }, 100)
+
+  introBox.style.display = 'initial'
+  introBox.style.position = 'initial'
+  
+  currBox = 1
+})
+
+radioSecond.addEventListener('click',()=>{
+  if(currBox == 2){
+    return false
+  }
+
+  introBox.style.opacity = '0';
+  introBox.style.position = 'absolute'
+
+  setTimeout(()=>{
+    introBox.style.display = 'none'
+  }, 100),
+
+  setTimeout(()=>{
+    introBoxSecond.style.opacity = '1'
+  }, 100)
+
+  introBoxSecond.style.position = 'relative'
+  introBoxSecond.style.display = 'initial'
+  
+  currBox = 2
+})
+
+
+// Navigation
 const navbarBtn = document.getElementById("navbar__btn")
 const mobileBar = document.querySelector(".mobile_bar")
 const listLinks = document.querySelectorAll('.list__link')

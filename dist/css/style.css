@@ -960,6 +960,22 @@ a {
           transform: translateX(80%);
 }
 
+.intro .intro__content .content__img #intro_box {
+  display: initial;
+  opacity: 1;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.intro .intro__content .content__img #intro_box_second {
+  opacity: 0;
+  display: none;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
 .intro .mb {
   display: none !important;
 }

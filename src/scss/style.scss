@@ -409,6 +409,19 @@ a{
                 transform: translateX(80%);
             }
 
+            #intro_box{
+                display: initial;
+                opacity: 1;
+                transition: all .2s linear;
+            }
+
+            #intro_box_second{
+                opacity: 0;
+                display: none;
+
+                transition: all .2s linear;
+            }
+
             @media screen and (min-width: 2400px){
                 margin-left: 12vw;
                 max-width: 35vw;
