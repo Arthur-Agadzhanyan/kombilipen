@@ -1268,6 +1268,27 @@ a {
   min-height: 70vh;
 }
 
+.how_to_apply .how_title {
+  display: inline-block;
+}
+
+.how_to_apply .how_title::after {
+  display: inline-block;
+  content: "1";
+  color: #fff;
+  font-size: 16px;
+  line-height: 100%;
+  position: relative;
+  top: -24px;
+  left: 5px;
+  padding: 1px 5px;
+  padding-bottom: 0.5px;
+  border-radius: 50%;
+  background: #019D99;
+  height: 100%;
+  margin-top: -20px;
+}
+
 .how_to_apply .section__title {
   position: relative;
   z-index: 2;
@@ -1301,8 +1322,8 @@ a {
           justify-content: space-between;
   margin-right: 67px;
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 33%;
-          flex: 0 1 33%;
+      -ms-flex: 0 1 35%;
+          flex: 0 1 35%;
 }
 
 .how_to_apply .how_to_apply__content .content__list .list__item {
@@ -1457,9 +1478,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .where_to_buy .where_to_buy__content .content__list .list__item {
@@ -1467,6 +1488,7 @@ a {
       -ms-flex: 0 1 24%;
           flex: 0 1 24%;
   background: #fff;
+  margin: 0px 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1778,6 +1800,7 @@ a {
 
   .how_to_apply .section__title {
     font-size: 47px;
+    max-width: 790px;
   }
 
   .how_to_apply .how_to_apply__content .content__img {
@@ -2125,6 +2148,22 @@ a {
     padding-left: 0px;
   }
 
+  .where_to_buy .where_to_buy__content .content__list .list__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 48%;
+            flex: 0 1 48%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .where_to_buy .where_to_buy__content .content__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
   .text_deficit .deficit__info .info__title {
     max-width: 85vw;
     font-weight: 800;
@@ -2296,18 +2335,6 @@ a {
     padding-top: 70px;
   }
 
-  .where_to_buy .where_to_buy__content .content__list .list__item {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 48%;
-            flex: 0 1 48%;
-    margin-bottom: 20px;
-  }
-
-  .where_to_buy .where_to_buy__content .content__list {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-
   .where_to_buy {
     padding-top: 32px;
     padding-bottom: 51px;
@@ -2472,6 +2499,11 @@ a {
   .how_to_apply {
     padding-top: 32px;
     padding-bottom: 32px;
+  }
+
+  .where_to_buy .where_to_buy__content .content__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 
   .text_deficit .deficit__info .info__title {
@@ -2767,6 +2799,10 @@ a {
     right: -30%;
   }
 
+  .how_to_apply .how_title::after {
+    top: -14px;
+  }
+
   .how_to_apply .section__title {
     line-height: initial;
     font-size: 35px;
@@ -2957,6 +2993,12 @@ a {
   .benefits .benefits__content .content__btn {
     padding: 18px 35px;
     margin-bottom: 24px;
+  }
+
+  .how_to_apply .how_title::after {
+    font-size: 10px;
+    padding: 2px 5px;
+    top: -10px;
   }
 
   .how_to_apply .section__title {

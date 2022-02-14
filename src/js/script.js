@@ -65,6 +65,7 @@ if(path == "/" || path == '/index.html'){
 const navbarBtn = document.getElementById("navbar__btn")
 const mobileBar = document.querySelector(".mobile_bar")
 const listLinks = document.querySelectorAll('.list__link')
+const navbarBtnLink = document.querySelector('.navbar__btn_link')
 
 navbarBtn.addEventListener('click',(e)=>{
 
@@ -89,6 +90,12 @@ listLinks.forEach((link)=>{
         navbarBtn.classList.remove('burger_active')
     })
 
+})
+
+navbarBtnLink.addEventListener('click',(e)=>{
+  mobileBar.classList.add("mb_bar_closed")
+  mobileBar.classList.remove("bot_0")
+  navbarBtn.classList.remove('burger_active')
 })
 
 const anchors = document.querySelectorAll('a[href*="#"]')
