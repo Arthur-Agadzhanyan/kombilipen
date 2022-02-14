@@ -1481,6 +1481,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 .where_to_buy .where_to_buy__content .content__list .list__item {
