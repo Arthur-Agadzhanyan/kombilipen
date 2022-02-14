@@ -787,7 +787,7 @@ a {
 }
 
 .text_section .text-container {
-  max-width: 890px;
+  max-width: 886px;
   padding: 0px 15px;
   width: 100%;
   margin: 0 auto;
@@ -808,7 +808,7 @@ a {
 .text_section .text-container .block__list li {
   padding-top: 5px;
   margin-left: 30px;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 23px;
 }
 
@@ -1508,7 +1508,7 @@ a {
 }
 
 .text_vitamins_back {
-  padding-top: 114px;
+  padding-top: 50px;
   padding-bottom: 10px;
 }
 
@@ -1528,7 +1528,7 @@ a {
 }
 
 .text_deficit {
-  padding-top: 50px;
+  padding-top: 114px;
 }
 
 .text_deficit .deficit__info {
@@ -1553,18 +1553,6 @@ a {
 
 .text_deficit .deficit__info .block__list li {
   padding-bottom: 8px;
-}
-
-.first_vitamins .section__green {
-  padding-bottom: 240px;
-}
-
-.second_vitamins {
-  margin-top: -225px;
-}
-
-.second_vitamins .text-container .block__text {
-  font-size: 18px;
 }
 
 .text_vitamins .text-container .info__name {
@@ -1601,6 +1589,22 @@ a {
           transform: translateX(20%);
 }
 
+.first_vitamins .section__green {
+  padding-bottom: 240px;
+}
+
+.vitamins_one {
+  margin-bottom: 52px;
+}
+
+.second_vitamins {
+  margin-top: -225px;
+}
+
+.second_vitamins .text-container .text {
+  font-size: 18px;
+}
+
 .text_vitamins__grey {
   padding-bottom: 15px;
 }
@@ -1611,7 +1615,7 @@ a {
 }
 
 .text_vitamins__grey .content__block {
-  margin-bottom: 82px;
+  margin-bottom: 42px;
 }
 
 .text_vitamins__grey .block__list li {
@@ -2515,15 +2519,6 @@ a {
     margin-bottom: 20px !important;
   }
 
-  .first_vitamins .section__green {
-    padding-bottom: 170px;
-    margin-top: 24px;
-  }
-
-  .second_vitamins {
-    margin-top: -170px;
-  }
-
   .text_vitamins .text-container .big_text {
     font-size: 23px;
   }
@@ -2546,6 +2541,19 @@ a {
 
   .text_vitamins .text-container .vitamins__img .img_vitamins img {
     width: 100%;
+  }
+
+  .first_vitamins .section__green {
+    padding-bottom: 170px;
+    margin-top: 24px;
+  }
+
+  .vitamins_one {
+    margin-bottom: 32px;
+  }
+
+  .second_vitamins {
+    margin-top: -170px;
   }
 
   .text_vitamins__grey {
@@ -2838,20 +2846,24 @@ a {
     max-width: 85vw;
   }
 
-  .first_vitamins .section__green {
-    padding-bottom: 120px;
-  }
-
-  .second_vitamins {
-    margin-top: -130px;
-  }
-
   .text_vitamins .text-container .block__text {
     margin-bottom: 24px;
   }
 
   .text_vitamins .text-container .vitamins__img {
     margin-bottom: 22px;
+  }
+
+  .first_vitamins .section__green {
+    padding-bottom: 120px;
+  }
+
+  .vitamins_one {
+    margin-bottom: 20px;
+  }
+
+  .second_vitamins {
+    margin-top: -130px;
   }
 }
 
@@ -3112,16 +3124,16 @@ a {
     padding-top: 35px;
   }
 
+  .text_vitamins .text-container .big_text {
+    font-size: 21px;
+  }
+
   .first_vitamins .section__green {
     padding-bottom: 125px;
   }
 
   .second_vitamins {
     margin-top: -130px;
-  }
-
-  .text_vitamins .text-container .big_text {
-    font-size: 21px;
   }
 
   .text_vitamins__grey .section__title {
@@ -3235,20 +3247,20 @@ a {
     font-size: 23px;
   }
 
-  .first_vitamins .section__green {
-    padding-bottom: 100px;
-  }
-
-  .second_vitamins {
-    margin-top: -85px;
-  }
-
   .text_vitamins .text-container .block__text {
     margin-bottom: 16px;
   }
 
   .text_vitamins .text-container .vitamins__img {
     margin-bottom: 16px;
+  }
+
+  .first_vitamins .section__green {
+    padding-bottom: 100px;
+  }
+
+  .second_vitamins {
+    margin-top: -85px;
   }
 }
 
