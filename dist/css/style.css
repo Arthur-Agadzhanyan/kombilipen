@@ -800,6 +800,10 @@ a {
   line-height: 140%;
 }
 
+.text_section .text-container .block__text h2 {
+  margin-bottom: 16px;
+}
+
 .text_section .text-container .block__list {
   list-style: disc;
   padding-top: 5px;
@@ -1620,10 +1624,6 @@ a {
 
 .second_vitamins {
   margin-top: -225px;
-}
-
-.second_vitamins .text-container .text {
-  font-size: 18px;
 }
 
 .text_vitamins__grey {

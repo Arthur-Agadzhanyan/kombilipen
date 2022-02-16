@@ -78,6 +78,9 @@ a{
         margin: 0 auto;
 
         .block__text{
+            h2{
+                margin-bottom: 16px;
+            }
             @include text(#000,24px,400,140%);
 
             @media screen and (max-width: 700px) {
@@ -1989,12 +1992,6 @@ a{
 
 .second_vitamins{
     margin-top: -225px;
-
-    .text-container{
-        .text{
-            font-size: 18px;
-        }
-    }
 
     @media screen and (max-width: 700px) {
         margin-top: -170px;
