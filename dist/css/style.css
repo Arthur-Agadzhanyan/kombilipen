@@ -809,6 +809,12 @@ a {
   padding-top: 5px;
   margin-left: 30px;
   font-weight: 400;
+  font-size: 16px;
+  color: #E60074;
+}
+
+.text_section .text-container .block__list li span {
+  color: #000;
   font-size: 23px;
 }
 
@@ -829,14 +835,16 @@ a {
 
 .text_section .section__green {
   background: #00AFAA;
-  padding: 46px 0px 39px 0px;
+  padding: 60px 0px 39px 0px;
   margin-top: 50px;
 }
 
 .text_section .section__green .block__text,
 .text_section .section__green .section__title,
 .text_section .section__green .section__subtitle,
-.text_section .section__green .big_text {
+.text_section .section__green .big_text,
+.text_section .section__green .block__list li,
+.text_section .section__green .block__list span {
   color: #fff !important;
 }
 
@@ -1521,7 +1529,7 @@ a {
 }
 
 .text_vitamins_back .section__title {
-  color: #019D97;
+  color: #E3007A;
   font-weight: 800;
   line-height: 120%;
   margin-bottom: 30px;
@@ -1559,6 +1567,10 @@ a {
   margin-bottom: 23px;
 }
 
+.text_vitamins .text-container .info__name .sm {
+  display: none;
+}
+
 .text_vitamins .text-container .big_text {
   color: #000;
   font-size: 30px;
@@ -1577,20 +1589,29 @@ a {
 }
 
 .text_vitamins .text-container .vitamins__img .img__main {
-  max-width: 80%;
+  max-width: 60%;
 }
 
 .text_vitamins .text-container .vitamins__img .img_vitamins {
   position: absolute;
   top: -25px;
   right: 0;
-  -webkit-transform: translateX(20%);
-      -ms-transform: translateX(20%);
-          transform: translateX(20%);
+  -webkit-transform: translateX(-22%);
+      -ms-transform: translateX(-22%);
+          transform: translateX(-22%);
+  max-width: 40%;
+}
+
+.text_vitamins .text-container .vitamins__img .img_vitamins img {
+  width: 100%;
+}
+
+.first_vitamins .text_title {
+  margin-bottom: 21px !important;
 }
 
 .first_vitamins .section__green {
-  padding-bottom: 240px;
+  padding-bottom: 220px;
 }
 
 .vitamins_one {
@@ -2174,22 +2195,6 @@ a {
     font-weight: 800;
     font-size: 35px;
   }
-
-  .text_vitamins .text-container .vitamins__img {
-    max-width: 70%;
-  }
-
-  .text_vitamins .text-container .vitamins__img .img_vitamins {
-    max-width: 50%;
-    top: -15px;
-    -webkit-transform: translateX(38%);
-        -ms-transform: translateX(38%);
-            transform: translateX(38%);
-  }
-
-  .text_vitamins .text-container .vitamins__img .img_vitamins img {
-    width: 100%;
-  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -2410,7 +2415,7 @@ a {
     font-size: 20px;
   }
 
-  .text_section .text-container .block__list li {
+  .text_section .text-container .block__list li span {
     font-size: 20px;
   }
 
@@ -2633,6 +2638,14 @@ a {
 
   .where_to_buy .where_to_buy__content .content__list .list__item {
     padding: 32px 20px;
+  }
+
+  .text_vitamins .text-container .info__name .md {
+    display: none;
+  }
+
+  .text_vitamins .text-container .info__name .sm {
+    display: block;
   }
 }
 
@@ -2920,7 +2933,7 @@ a {
     font-size: 18px;
   }
 
-  .text_section .text-container .block__list li {
+  .text_section .text-container .block__list li span {
     font-size: 18px;
   }
 
@@ -3218,8 +3231,11 @@ a {
   }
 
   .text_section .text-container .block__list li {
-    font-size: 16px;
     margin-left: 25px;
+  }
+
+  .text_section .text-container .block__list li span {
+    font-size: 16px;
   }
 
   .text_section .text-container .section__title {

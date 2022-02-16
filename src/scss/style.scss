@@ -99,16 +99,28 @@ a{
                 padding-top: 5px;
                 margin-left: 30px;
                 font-weight: 400;
-                font-size: 23px;
+                font-size: 16px;
+                color: $crimson_2;
+
+                span{
+                    color: #000;
+                    font-size: 23px;
+                }
 
                 @media screen and (max-width: 700px) {
-                    font-size: 20px;
+                    span{
+                        font-size: 20px;
+                    }
                 }
                 @media screen and (max-width: 400px) {
-                    font-size: 18px;
+                    span{
+                        font-size: 18px;
+                    }
                 }
                 @media screen and (max-width: 350px) {
-                    font-size: 16px;
+                    span{
+                        font-size: 16px;
+                    }
                     margin-left: 25px;
                 }
             }
@@ -165,10 +177,10 @@ a{
 
     .section__green{
         background: $aqua_2;
-        padding: 46px 0px 39px 0px;
+        padding: 60px 0px 39px 0px;
         margin-top: 50px;
         
-        .block__text, .section__title, .section__subtitle, .big_text{
+        .block__text, .section__title, .section__subtitle, .big_text, .block__list li, .block__list span{
             color: #fff !important;
         }
 
@@ -1709,7 +1721,7 @@ a{
     }
 
     .section__title{
-        color: #019D97;
+        color: $crimson_1;
         font-weight: 800;
         line-height: 120%;
         margin-bottom: 30px;
@@ -1811,6 +1823,19 @@ a{
 
         .info__name{
             margin-bottom: 23px;
+
+            .md{
+                @media screen and (max-width: 600px) {
+                    display: none;
+                }
+            }
+
+            .sm{
+                display: none;
+                @media screen and (max-width: 600px) {
+                    display: block;
+                }
+            }
         }
 
         .big_text{
@@ -1843,7 +1868,7 @@ a{
             margin-bottom: 45px;
 
             .img__main{
-                max-width: 80%;
+                max-width: 60%;
 
                 @media screen and (max-width: 900px) {
                     max-width: 85%;
@@ -1862,21 +1887,25 @@ a{
                 top: -25px;
                 right: 0;
 
-                transform: translateX(20%);
+                transform: translateX(-22%);
+                max-width: 40%;
+                img{
+                    width: 100%;
+                }
             }
 
             @media screen and (max-width: 1100px) {
-                max-width: 70%;
+                
 
-                .img_vitamins{
-                    max-width: 50%;
-                    top: -15px;
-                    transform: translateX(38%);
+                // .img_vitamins{
+                //     max-width: 50%;
+                //     top: -15px;
+                //     transform: translateX(38%);
 
-                    img{
-                        width: 100%;
-                    }
-                }
+                //     img{
+                //         width: 100%;
+                //     }
+                // }
             }
 
             @media screen and (max-width: 900px) {
@@ -1920,8 +1949,12 @@ a{
 }
 
 .first_vitamins{
+    .text_title{
+        margin-bottom: 21px !important;
+    }
+
     .section__green{
-        padding-bottom: 240px;
+        padding-bottom: 220px;
 
         @media screen and (max-width: 700px) {
             padding-bottom: 170px;
