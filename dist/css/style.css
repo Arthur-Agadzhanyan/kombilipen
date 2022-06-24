@@ -459,6 +459,20 @@ template {
   color: #E60074;
 }
 
+.navigation .navigation__buy .buy__btn-white {
+  color: #454545;
+  background: #fff;
+  margin-right: 24px;
+  width: 201px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.navigation .navigation__buy .buy__btn-white:hover {
+  color: #fff;
+  background: #E60074;
+}
+
 .navigation .navigation__buy .buy__img {
   margin-left: 48px;
   margin-bottom: -3px;
@@ -1700,6 +1714,10 @@ a {
 }
 
 @media screen and (max-width: 1650px) {
+  .navigation .navigation__buy .buy__img {
+    margin-left: 25px;
+  }
+
   .intro .intro__content .content__img {
     max-width: 40vw;
     margin-left: 83px;
@@ -1731,7 +1749,23 @@ a {
   }
 }
 
+@media screen and (max-width: 1600px) {
+  .navigation .navigation__buy .buy__btn-white {
+    margin-right: 12px;
+    font-size: 14px;
+    width: 160px;
+  }
+
+  .navigation .navigation__buy .buy__img {
+    margin-right: -30px;
+  }
+}
+
 @media screen and (max-width: 1550px) {
+  .navigation .container {
+    padding-left: 40px;
+  }
+
   .footer .block__br {
     display: block;
   }
@@ -1766,6 +1800,10 @@ a {
 }
 
 @media screen and (max-width: 1500px) {
+  .navigation .navigation__buy .buy__img {
+    display: none;
+  }
+
   .footer .footer__top .top__content .top__contacts .contacts__block {
     margin-left: auto;
     max-width: 40%;
@@ -1784,12 +1822,14 @@ a {
     margin-right: 14px;
   }
 
-  .navigation .navigation__buy .buy__btn {
-    padding: 12px 35px;
+  .navigation .navigation__buy .buy__btn-white {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    width: 201px;
   }
 
-  .navigation .navigation__buy .buy__img {
-    margin-left: 25px;
+  .navigation .navigation__buy .buy__btn {
+    padding: 12px 35px;
   }
 
   .text_section .text-container .section__title {
@@ -1882,6 +1922,10 @@ a {
 }
 
 @media screen and (max-width: 1300px) {
+  .navigation .navigation__buy .buy__btn-white {
+    width: 170px;
+  }
+
   .benefits .benefits__content .content__list .list__item .item__info .info__title {
     font-size: 27px;
   }
@@ -1906,16 +1950,28 @@ a {
 }
 
 @media screen and (max-width: 1250px) {
+  .navigation .container {
+    padding: 0px 24px;
+  }
+
   .navigation .navigation__links .links__list .list__item {
     margin-right: 18px;
   }
 
-  .navigation .navigation__buy .buy__img {
-    display: none;
+  .navigation .navigation__buy .buy__btn-white {
+    margin-right: 8px;
+  }
+
+  .navigation .navigation__buy .buy__btn {
+    padding: 12px 18px;
   }
 }
 
 @media screen and (max-width: 1200px) {
+  .navigation .navigation__buy .buy__btn-white {
+    display: none;
+  }
+
   .container {
     padding: 0px 40px;
   }
