@@ -122,3 +122,50 @@ for (let anchor of anchors) {
       })
   })
 }
+
+// MODAL
+
+const specModalBtn = document.querySelector('#spec_modal_btn')
+const specModalCheckbox = document.querySelector('#spec_modal_checkbox')
+const specModalCheckboxText = document.querySelector('#spec_modal_checkbox_text')
+const specModalText = document.querySelector('#spec_modal_text')
+
+
+if(specModalBtn && MicroModal){
+  MicroModal.init({
+    onShow: modal => console.info(`${modal.id} is shown`), // [1]
+    onClose: modal => console.info(`${modal.id} is hidden`), // [2]
+    openTrigger: 'data-custom-open', // [3]
+    closeTrigger: 'data-custom-close', // [4]
+    openClass: 'is-open', // [5]
+    disableScroll: true, // [6]
+    disableFocus: false, // [7]
+    awaitOpenAnimation: false, // [8]
+    awaitCloseAnimation: false, // [9]
+    debugMode: true // 
+  });
+  // check__text-error
+  
+  
+  specModalBtn.addEventListener('click',()=>{
+    if(!specModalCheckbox.checked){
+      specModalCheckboxText.classList.remove('check__text-error')
+      specModalCheckboxText.classList.add('check__text-error')
+    }else{
+      specModalCheckbox.checked = false
+    }
+  })
+  
+  specModalCheckbox.addEventListener('change',()=>{
+    if(specModalCheckbox.checked){
+      specModalText.classList.remove('content__info-hidden')
+      specModalCheckboxText.classList.remove('check__text-error')
+      specModalBtn.href = 'https://combilipen.medicina360.ru'
+    }else{
+      specModalText.classList.add('content__info-hidden')
+      specModalBtn.href = '#'
+    }
+  })
+  
+  specModalBtn.addEventListener
+}
